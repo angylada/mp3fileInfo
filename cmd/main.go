@@ -82,11 +82,11 @@ func (w Worker) addMetaData(fileName string, wd string, wg *sync.WaitGroup) {
 
 	if len(mp3File.Artist()) < 1 {
 		fmt.Println("'" + mp3File.Artist() + "'" + groups[0])
-		mp3File.SetArtist(groups[0])
+		mp3File.SetArtist(strings.TrimSpace(groups[0]))
 	}
 
 	if len(mp3File.Title()) < 1 {
-		mp3File.SetTitle(strings.Trim(groups[1], "- "))
+		mp3File.SetTitle(strings.TrimSpace(strings.Trim(groups[1], "- ")))
 	}
 	_ = mp3File.Save()
 }

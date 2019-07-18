@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/mikkyang/id3-go"
+	"github.com/bogem/id3v2"
+	id3v22 "github.com/bogem/id3v2"
 	"io/ioutil"
 	"log"
 	"os"
@@ -70,20 +71,24 @@ func (w Worker) addMetaData(fileName string, wd string, wg *sync.WaitGroup) {
 	}
 
 	fmt.Println(wd + "/" + fileName)
-	mp3File, mp3Err := id3.Open(wd + "/" + fileName)
+	mp3File, mp3Err := id3v22.Open(wd + "/" + fileName, id3v2.Options{Parse: true})
 
 	if mp3Err != nil {
+		fmt.Println(mp3Err)
 		return
 	}
 	defer mp3File.Close()
+	fmt.Println(mp3File.Artist())
 
 	if len(mp3File.Artist()) < 1 {
+		fmt.Println("'" + mp3File.Artist() + "'" + groups[0])
 		mp3File.SetArtist(groups[0])
 	}
 
 	if len(mp3File.Title()) < 1 {
 		mp3File.SetTitle(strings.Trim(groups[1], "- "))
 	}
+	_ = mp3File.Save()
 }
 
 /*

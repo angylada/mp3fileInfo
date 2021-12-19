@@ -1,4 +1,4 @@
-package mp3fileInfo
+package main
 
 import (
 	"fmt"

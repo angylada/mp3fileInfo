@@ -3,6 +3,7 @@ Enriches ID3-data (artist and title) based on the filename of all mp3-files  in 
 given via command line arguments. If the parameter is being omitted, the current working directory will be used.
 The filenames need to be in the format "ARTIST - TITLE.mp3" since " - " is the separator.
 
+Every file will be processed in parallel, processing 30 files at once took less than 300ms in multiple tests. 
 ## How to build
 
 ### Linux

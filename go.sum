@@ -1,11 +1,9 @@
 github.com/bogem/id3v2 v1.1.1 h1:FnjS2vytMeEb39tOMG09uz852MaEccA2A3asRM3XxbE=
 github.com/bogem/id3v2 v1.1.1/go.mod h1:D1rDm80qF/ocBU+Ik8U4RKnwMq/oNkkB8vGcnrlMJmM=
-github.com/djimenez/iconv-go v0.0.0-20160305225143-8960e66bd3da h1:0qwwqQCLOOXPl58ljnq3sTJR7yRuMolM02vjxDh4ZVE=
-github.com/djimenez/iconv-go v0.0.0-20160305225143-8960e66bd3da/go.mod h1:ns+zIWBBchgfRdxNgIJWn2x6U95LQchxeqiN5Cgdgts=
-github.com/mikkyang/id3-go v0.0.0-20151201011346-0168d962f1d7 h1:btim4ecgSZHg0CNloyFoMHvjWGQP3pWujmVTw+9zXuw=
-github.com/mikkyang/id3-go v0.0.0-20151201011346-0168d962f1d7/go.mod h1:6ReX25kzt2D67Dt9vH3kTm8R4luFEfW9W3RDuytp0IA=
-github.com/wtolson/go-taglib v0.0.0-20180718000046-586eb63c2628 h1:hYOyf8es7yvMucqlPar3CdobJeY0+0OmR5iT4hHYW54=
-github.com/wtolson/go-taglib v0.0.0-20180718000046-586eb63c2628/go.mod h1:p+WHGfN/a+Ol37Pm7EIOO/6Cylieb2qn1jmKfxtSsUg=
+github.com/bogem/id3v2 v1.2.0 h1:hKDF+F1gOgQ5r1QmBCEZUk4MveJbKxCeIDSBU7CQ4oI=
+github.com/bogem/id3v2 v1.2.0/go.mod h1:t78PK5AQ56Q47kizpYiV6gtjj3jfxlz87oFpty8DYs8=
+github.com/bogem/id3v2/v2 v2.1.2 h1:++1bbBfveCXdH8ep/Tuecua5BzHgljPL0c/msnAOO64=
+github.com/bogem/id3v2/v2 v2.1.2/go.mod h1:hVfgiLdvXyAPqnCc3+CbdEvAv7uOkYn6a/rVpHmABmg=
 golang.org/x/text v0.3.2 h1:tW2bmiBqwgJj/UpqtC8EpXEZVYOwU0yG4iWbprSVAcs=
 golang.org/x/text v0.3.2/go.mod h1:bEr9sfX3Q8Zfm5fL9x+3itogRgK3+ptLWKqgva+5dAk=
 golang.org/x/tools v0.0.0-20180917221912-90fa682c2a6e/go.mod h1:n7NCudcB/nEzxVGmLbDWY5pfWTLqBcC2KZ6jyYvM4mQ=
